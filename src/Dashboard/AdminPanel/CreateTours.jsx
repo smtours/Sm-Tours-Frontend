@@ -102,7 +102,7 @@ const CreateTours = () => {
 
   return (
     <div className="min-h-screen md:min-h-[400px] flex items-center justify-center bg-gray-100">
-      <div className="bg-white mx-6 p-6 md:p-8 rounded-lg text-center shadow-md w-full max-w-xl m-8 md:max-w-[80%] ">
+      <div className="bg-white mx-6 p-6 md:p-8 rounded-lg text-center shadow-md w-full max-w-xl m-8 md:max-w-[80%]">
         <div className="flex flex-col justify-center">
           <div className="text-center mb-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Create Tour</h2>
@@ -149,7 +149,6 @@ const CreateTours = () => {
                   required
                 />
               </div>
-           
               <div>
                 <label htmlFor="distance" className="block text-md md:text-lg font-medium text-GrayColor">Distance</label>
                 <input
@@ -174,17 +173,17 @@ const CreateTours = () => {
                 required
               />
             </div>
-            <div>
+            <div className="mb-4">
               <label htmlFor="desc" className="block text-md md:text-lg font-medium text-GrayColor">Description</label>
               <ReactQuill
                 theme="snow"
                 value={formData.desc}
                 onChange={handleDescChange}
                 placeholder="Enter Description"
-                className="w-full h-40 mb-4"
+                className="w-full h-auto mb-4"
               />
             </div>
-            <div>
+            <div className="mb-4">
               <label htmlFor="photo" className="block text-md md:text-lg font-medium text-GrayColor">Photo</label>
               <input
                 type="file"
@@ -204,15 +203,11 @@ const CreateTours = () => {
             </div>
             <div>
               <button type="submit" className="w-full Greenbtn my-3 h-12 flex align-middle justify-center" disabled={isLoading}>
-              {isLoading ? (
-                  
-            
-                  <Loader type="ping-cube" bgColor={"white"} color={"white"}  size={50}/>
-               
-               
-              ) : (
-                "Create"
-              )}
+                {isLoading ? (
+                  <Loader type="ping-cube" bgColor={"white"} color={"white"} size={50} />
+                ) : (
+                  "Create"
+                )}
               </button>
             </div>
           </form>

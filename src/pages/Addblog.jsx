@@ -111,7 +111,7 @@ export default function Addblog() {
                             <ReactQuill
                                 theme="snow"
                                 placeholder="Enter Description"
-                                className="w-full h-40 mb-4"
+                                className="w-full h-auto mb-4"
                                 value={description}
                                 onChange={setDescription}
                             />
