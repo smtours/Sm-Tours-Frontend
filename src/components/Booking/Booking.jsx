@@ -148,6 +148,7 @@ const Booking = ({ price, title, reviewsArray, avgRating }) => {
               className="booking_input"
               type="date"
               id="date"
+              placeholder="For which date"
               required
               onChange={handleChange}
             />

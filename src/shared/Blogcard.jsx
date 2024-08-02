@@ -7,6 +7,7 @@ export default function Blogcard({blog}) {
     const { picture, title, description,_id } = blog;
   
   return (
+    <Link to={`/fullblog/${_id}`}>
     <div className="max-w-sm rounded overflow-hidden shadow-lg h-[370px] flex flex-col">
     <div className="relative">
       <img className="w-full h-40 object-cover" src={picture} alt={title} />
@@ -31,5 +32,6 @@ export default function Blogcard({blog}) {
       </Link>
     </div>
   </div>
+  </Link>
   )
 }

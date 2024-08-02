@@ -81,7 +81,7 @@ const Testimonials = () => {
             <div className="w-[75px] h-[55px] rounded-md overflow-hidden">
               <img
                 src={data.pic}
-                className="w-full h-full object-cover rounded-2"
+                className="w-full h-full object-contain rounded-2"
                 alt=""
               />
             </div>

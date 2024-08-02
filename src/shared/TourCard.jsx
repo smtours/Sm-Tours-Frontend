@@ -8,6 +8,7 @@ const TourCard = ({ tour }) => {
   const { totalRating, avgRating } = CalculateAvg(reviews);
 
   return (
+    <Link to={`/tours/${_id}`}>
     <div className="max-w-sm rounded overflow-hidden shadow-lg h-[470px] flex flex-col">
       <div className="relative">
         <img className="w-full h-40 object-cover" src={photo} alt={title} />
@@ -51,6 +52,7 @@ const TourCard = ({ tour }) => {
         </Link>
       </div>
     </div>
+    </Link>
   );
 };
 
