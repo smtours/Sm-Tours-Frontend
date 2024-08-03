@@ -23,7 +23,7 @@ const Contact = () => {
     setemail("")
     setmessage("")
     setsubject("")
-    set
+    
    }else{
     toast.error("Email has not been send")
    }
