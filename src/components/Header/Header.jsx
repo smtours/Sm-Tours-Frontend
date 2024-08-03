@@ -115,11 +115,15 @@ const Header = () => {
                     Tours
                   </Link>
                   <Link to="/create" onClick={handleMenuToggle}>
-                    Create
+                    Create Tours
                   </Link>
                   <Link to="/addblog" onClick={handleMenuToggle}>
                     Add Blog
                   </Link>
+                  <Link to="/allblogs" onClick={handleMenuToggle}>
+                    Blogs
+                  </Link>
+                  
                 </>
               )}
               {user ? (
@@ -150,8 +154,9 @@ const Header = () => {
           <ul className="md:flex hidden space-x-8">
             <Link to="/all-booking">Bookings</Link>
             <Link to="/all-tours">Tours</Link>
-            <Link to="/create">Create</Link>
+            <Link to="/create">Create Tours</Link>
             <Link to="/addblog">Add Blogs</Link>
+            <Link to="/allblogs">Blogs</Link>
 
           </ul>
         ) : (

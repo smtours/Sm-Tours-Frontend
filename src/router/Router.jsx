@@ -21,6 +21,8 @@ import Emailsend from '../pages/Emailsend'
 import Addblog from '../pages/Addblog'
 import Blog from '../pages/Blog'
 import Fullblog from '../pages/Fullblog'
+import Allblogs from '../pages/Allblogs'
+import UpdateBlog from '../pages/UpdateBlog'
 
 const Router = () => {
   return (
@@ -31,6 +33,7 @@ const Router = () => {
         <Route path='/all-booking' element={<Bookings />} />
         <Route path='/all-tours' element={<AdminTours />} />
         <Route path='/update-tour/:id' element={<UpdateTours />} />
+        <Route path='/update-blog/:id' element={<UpdateBlog />} />
         <Route path='/create' element={<CreateTours />} />
         <Route path='/login' element={<Login />} />
         <Route path='/resetpass' element={<Forgetpass />} />
@@ -40,6 +43,8 @@ const Router = () => {
         <Route path='/blogs' element={<Blog/>} />
         <Route path='/addblog' element={<Addblog />} />
         <Route path='/fullblog/:id' element={<Fullblog />} />
+        <Route path='/allblogs' element={<Allblogs />} />
+
 
 
 

@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       {role === "admin" ? null : (
-        <footer className="bg-gray-800 text-white px-5 py-8 w-full">
+        <footer className="bg-gray-800 text-white px-5 py-8 ">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col items-center mb-4 md:mb-0">
               <img

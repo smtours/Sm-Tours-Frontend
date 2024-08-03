@@ -1,6 +1,33 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
+import Loader from "react-js-loader"
+import BASE_URL from "../utils/config";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [email,setemail]=useState("")
+  const [subject,setsubject]=useState("")
+    const [message,setmessage]=useState("")
+    const isvalid=()=>{
+      return email.trim()!=="" || subject.trim()!=="" || message.trim()!==""
+    }
+  const handlesubmit=async(e)=>{
+    e.preventDefault()
+    if(!isvalid()){
+      return toast.error("All fields are required")
+    }
+
+   const {data}=await axios.post(`${BASE_URL}/sendmail`,{email,subject,message})
+   if(data){
+    toast.success("Email has benn sent")
+    setemail("")
+    setmessage("")
+    setsubject("")
+    set
+   }else{
+    toast.error("Email has not been send")
+   }
+  }
   return (
     <section className="md:min-h-screen">
       <div className="px-4 py-8 md:py-2 m-auto max-w-screen-md">
@@ -9,7 +36,7 @@ const Contact = () => {
           Got any issue? Want to reach us? Let us know.
         </p>
 
-        <form action="#" className="space-y-4">
+        <form onSubmit={handlesubmit} className="space-y-4">
           <div>
             <label htmlFor="email" className="form_label">
               Your Email
@@ -17,6 +44,9 @@ const Contact = () => {
             <input
               type="email"
               id="email"
+              name="email"
+              value={email}
+              onChange={((e)=>setemail(e.target.value))}
               placeholder="example@tmail.com"
               className="form_input mt-1"
             />
@@ -30,6 +60,9 @@ const Contact = () => {
               id="subject"
               placeholder="Let us know about how can we help you?"
               className="form_input mt-1"
+              name="subject"
+              value={subject}
+              onChange={((e)=>setsubject(e.target.value))}
             />
           </div>
           <div>
@@ -42,10 +75,13 @@ const Contact = () => {
               rows="2"
               placeholder="Leave a Message..."
               className="form_input mt-1"
+              value={message}
+              name="message"
+              onChange={((e)=>setmessage(e.target.value))}
             ></textarea>
           </div>
 
-          <button className="btn w-full my-4">Submit</button>
+          <button  type="submit" className="btn w-full my-4">Submit</button>
         </form>
       </div>
     </section>
