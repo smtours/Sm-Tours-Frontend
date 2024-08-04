@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useState } from "react";
-import Loader from "react-js-loader"
 import BASE_URL from "../utils/config";
 import { toast } from "react-toastify";
 

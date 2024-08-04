@@ -1,6 +1,3 @@
-import React from "react";
-import BASE_URL from "../utils/config";
-import { toast } from "react-toastify";
 
 const BookingCard = ({ booking }) => {
   const { tourName, totalPrice, maxGroupSize, date, _id } = booking;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import FeaturedTourList from "../components/featruredTour/FeaturedTourList";
 import useFetch from "../hooks/useFetch";
 import BASE_URL from "../utils/config";
 import TourCard from "../shared/TourCard";

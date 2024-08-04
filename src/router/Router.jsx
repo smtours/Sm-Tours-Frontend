@@ -23,6 +23,7 @@ import Blog from '../pages/Blog'
 import Fullblog from '../pages/Fullblog'
 import Allblogs from '../pages/Allblogs'
 import UpdateBlog from '../pages/UpdateBlog'
+import Aboutus from '../pages/Aboutus'
 
 const Router = () => {
   return (
@@ -44,18 +45,11 @@ const Router = () => {
         <Route path='/addblog' element={<Addblog />} />
         <Route path='/fullblog/:id' element={<Fullblog />} />
         <Route path='/allblogs' element={<Allblogs />} />
-
-
-
-
-
-
-
-
         <Route path='/register' element={<Register />} />
         <Route path='/tours' element={<Tours />} />
         <Route path='/tours/:id' element={<TourDetails />} />
         <Route path='/about' element={<About />} />
+        <Route path='/aboutus' element={<Aboutus />} />
         <Route path='/booked' element={<Booked />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/tours/search' element={<SearchResultList />} />

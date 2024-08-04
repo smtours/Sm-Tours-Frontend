@@ -1,12 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import BASE_URL from "../utils/config";
-import useFetch from "../hooks/useFetch";
 import { toast } from "react-toastify";
-import UpdateTours from "../Dashboard/AdminPanel/UpdateTour";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-import { FaEdit, FaRegEdit } from "react-icons/fa";
-import { AiOutlineDelete } from "react-icons/ai";
+import { FaEdit} from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
 const AdminToursCards = ({ tour }) => {
@@ -15,13 +12,8 @@ const AdminToursCards = ({ tour }) => {
   const {
     title,
     city,
-    address,
-    price,
-    maxGroupSize,
-    desc,
     featured,
     reviews,
-    updatedAt,
     photo,
     _id,
   } = tour;
@@ -72,17 +64,13 @@ const AdminToursCards = ({ tour }) => {
               className="object-cover h-[65px] w-[95px] rounded-xl py-2 px-2"
             />{" "}
           </td>
-          {/* <td className='tdFont'>{photo}</td> */}
+         
           <td className="tableData text-start">{title}</td>
           <td className="tdFont">{city}</td>
           <td className="tdFont">{featured === true ? "Yes" : "No"}</td>
        
           <td className="tdFont">{reviews.length}</td>
-          {/* <td>
-            <Link to={`/tours/${tour._id}`} className="Greenbtn  my-2 mx-2 ">
-              View
-            </Link>
-          </td> */}
+        
           <td className="flex gap-2 w-full my-6">
             <Link
               to={`/update-tour/${tour._id}`}

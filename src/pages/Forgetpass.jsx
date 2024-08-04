@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import BASE_URL from "../utils/config";
 import axios from 'axios';
-import { ToastContainer } from 'react-toastify';
 import Loader from "react-js-loader"
 
 

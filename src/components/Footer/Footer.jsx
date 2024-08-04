@@ -1,13 +1,11 @@
 import Logo from "./../../assets/images/logo.png";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import {
   FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaYoutube,
   FaTiktok
 } from "react-icons/fa";
-import Newsletter from "../../shared/Newsletter";
 import { AuthContext } from "../../context/AuthContext";
 
 

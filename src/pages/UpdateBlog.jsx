@@ -15,12 +15,6 @@ export default function UpdateBlog() {
   const fileInputRef = useRef(null);
   const { id } = useParams();
   const { token } = useContext(AuthContext);
-  
-
-
-
-
-
   const handleImageUpload = async () => {
     if (!fileInputRef.current.files[0]) return picture;
     const formData = new FormData();

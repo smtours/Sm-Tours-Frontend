@@ -1,7 +1,5 @@
-import React, { useState, useContext, useEffect} from 'react';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import BASE_URL from '../../utils/config'
 import useFetch from '../../hooks/useFetch';
 import UpdateToursComp from './UpdateTourComp'

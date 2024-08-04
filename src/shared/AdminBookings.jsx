@@ -11,7 +11,6 @@ const BookingCard = ({ booking }) => {
   const {
     tourName,
     fullName,
-    userId,
     phone,
     totalPrice,
     maxGroupSize,

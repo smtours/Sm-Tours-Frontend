@@ -104,6 +104,9 @@ const Header = () => {
                   <Link to="/blogs" onClick={handleMenuToggle}>
                     Blogs
                   </Link>
+                  <Link to="/aboutus" onClick={handleMenuToggle}>
+                    About Us
+                  </Link>
                 </>
               )}
               {role === "admin" && (
@@ -123,6 +126,7 @@ const Header = () => {
                   <Link to="/allblogs" onClick={handleMenuToggle}>
                     Blogs
                   </Link>
+                
                   
                 </>
               )}
@@ -166,6 +170,8 @@ const Header = () => {
             <Link to="/about">Gallery</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/blogs">Blogs</Link>
+            <Link to="/aboutus">About Us</Link>
+
 
           </ul>
         )}
