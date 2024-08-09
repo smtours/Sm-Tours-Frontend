@@ -7,9 +7,9 @@ import Img02 from "../../assets/images/gall3.jpg";
 import Img03 from "../../assets/images/front-02.jpg";
 import Img04 from "../../assets/images/gall4.jpg";
 import Img06 from "../../assets/images/gall5.jpg";
-import Img07 from "../../assets/images/gallery-08.jpg";
+import Img07 from "../../assets/images/second.jpeg";
 import Img08 from "../../assets/images/gall6.jpg";
-import Img09 from "../../assets/images/gallery-01.jpg";
+import Img09 from "../../assets/images/first.jpeg";
 
 const ImagesGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);

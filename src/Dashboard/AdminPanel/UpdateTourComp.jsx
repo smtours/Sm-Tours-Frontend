@@ -184,7 +184,6 @@ const UpdateTours = ({ tour, id }) => {
                   required
                 />
               </div>
-
               <div>
                 <label
                   htmlFor="distance"
@@ -201,7 +200,12 @@ const UpdateTours = ({ tour, id }) => {
                   onChange={handleInput}
                 />
               </div>
-            </div>
+              </div>
+
+              <div >
+               
+          
+            
 
             <div>
               <label
@@ -220,7 +224,7 @@ const UpdateTours = ({ tour, id }) => {
                 required
               />
             </div>
-
+            </div>
             <div>
               <label
                 htmlFor="desc"

@@ -121,6 +121,7 @@ const Home = () => {
       {/* {Testimonials section ends} */}
 
       {/* {faq Section Start} */}
+      
       <section>
         <div className="px-6 md:px-12 py-6">
           <div className="flex justify-between gap-[50px] lg:gap-0">

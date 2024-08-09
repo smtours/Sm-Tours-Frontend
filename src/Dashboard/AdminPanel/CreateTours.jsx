@@ -159,8 +159,11 @@ const CreateTours = () => {
                   value={formData.distance}
                   onChange={handleInput}
                 />
-              </div>
+              
             </div>
+              </div>
+             
+             
             <div>
               <label htmlFor="address" className="block text-md md:text-lg font-medium text-GrayColor">Address</label>
               <input
@@ -173,6 +176,7 @@ const CreateTours = () => {
                 required
               />
             </div>
+          
             <div className="mb-4">
               <label htmlFor="desc" className="block text-md md:text-lg font-medium text-GrayColor">Description</label>
               <ReactQuill
